@@ -1,0 +1,336 @@
+{
+  "general": {
+    "userAgentRegexes": [],
+    "replaceStrings": [],
+    "languages": [],
+    "userAgentAdd": "gonative",
+    "useWKWebView": true,
+    "enableWindowOpen": true,
+    "useCrosswalkWebView": false,
+    "forceScreenOrientation": null,
+    "initialUrl": "https://dfdevs.web.app/",
+    "appName": "Delta Force Dev Portal",
+    "androidPackageName": "com.dftechs.webview.app",
+    "androidVersionName": "v.2.0-[Stable]",
+    "publicKey": "oebrde",
+    "deviceRegKey": "9wt1bm4w82e9ab0wxa9cxcdv0g",
+    "iosBundleId": "io.gonative.ios.oebrde"
+  },
+  "navigation": {
+    "tabNavigation": {
+      "tabSelectionConfig": [
+        {
+          "id": "1",
+          "regex": ""
+        }
+      ],
+      "tabMenus": [
+        {
+          "id": "1",
+          "items": [
+            {
+              "subLinks": []
+            }
+          ]
+        }
+      ],
+      "active": false
+    },
+    "sidebarNavigation": {
+      "menuSelectionConfig": {
+        "testURL": null,
+        "redirectLocations": [
+          {
+            "regex": null,
+            "menuName": "default",
+            "loggedIn": false
+          },
+          {
+            "regex": ".*",
+            "menuName": "default",
+            "loggedIn": true
+          }
+        ]
+      },
+      "menus": [
+        {
+          "name": "default",
+          "items": [
+            {
+              "url": "https://dfdevs.web.app/#",
+              "label": "Home",
+              "subLinks": [],
+              "icon": "fa-folder"
+            },
+            {
+              "url": "http://dftechs.rf.gd/",
+              "label": "Visit developer site",
+              "subLinks": [],
+              "icon": "fa-certificate"
+            },
+            {
+              "label": "Google Login",
+              "url": "https://accounts.google.com/signin/v2/identifier?service=accountsettings&flowEntry=AddSession&flowName=GlifWebSignIn",
+              "icon": "fa-google-plus",
+              "subLinks": []
+            },
+            {
+              "label": "Social",
+              "isGrouping": true,
+              "subLinks": [
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/dfpara_techs_dev_center/",
+                  "icon": "fa-camera-retro",
+                  "subLinks": []
+                },
+                {
+                  "label": "Discord Server",
+                  "url": "https://discordapp.com/invite/MqCuJ8D",
+                  "icon": "fa-gamepad",
+                  "subLinks": []
+                },
+                {
+                  "label": "Twitter",
+                  "url": "https://twitter.com/df_techs/",
+                  "icon": "fa-twitter-square",
+                  "subLinks": []
+                },
+                {
+                  "label": "Facebook",
+                  "url": "https://facebook.com/dfpara/",
+                  "icon": "fa-facebook-square",
+                  "subLinks": []
+                }
+              ],
+              "icon": "fa-th-list"
+            },
+            {
+              "label": "Contact Us",
+              "url": "https://contactdftechs.web.app/",
+              "icon": "fa-envelope",
+              "subLinks": []
+            }
+          ],
+          "active": true
+        },
+        {
+          "name": "loggedIn",
+          "items": [
+            {
+              "url": "https://dfdevs.web.app/#",
+              "label": "Delta force developer portal",
+              "subLinks": []
+            },
+            {
+              "url": "https://dfpara.web.app/",
+              "label": "Join discord server",
+              "subLinks": []
+            },
+            {
+              "url": "https://github.com/dftechsdevcenter/",
+              "label": "Visit developer site",
+              "subLinks": []
+            }
+          ],
+          "active": false
+        }
+      ]
+    },
+    "regexInternalExternal": {
+      "rules": [
+        {
+          "regex": "^(?!https?://).*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/login.php.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/dialog.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/v1\\.0/.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/oauth.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/v2\\.0/.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/checkpoint.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*plus\\.google\\.com/share.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*twitter\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*instagram\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://maps\\.google\\.com.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*linkedin\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*google\\.com/maps/search/.*",
+          "internal": false
+        },
+        {
+          "regex": ".*",
+          "internal": true
+        }
+      ],
+      "active": false
+    },
+    "androidPullToRefresh": true,
+    "iosPullToRefresh": true,
+    "navigationTitles": {
+      "titles": [
+        null
+      ],
+      "active": false
+    },
+    "ignorePageFinishedRegexes": [],
+    "androidShowRefreshButton": true,
+    "iosShowRefreshButton": false,
+    "deepLinkDomains": [],
+    "navigationLevels": {
+      "levels": [
+        null
+      ],
+      "active": true
+    },
+    "toolbarNavigation": null,
+    "redirects": []
+  },
+  "styling": {
+    "iosLaunchScreen": {
+      "backgroundColor": "#FFFFFF",
+      "backgroundImage": "https://s3.amazonaws.com/gonativeio/public/ios_launch_screen_background_default_FFFFFF_1_2x2.png"
+    },
+    "androidLaunchImages": {
+      "mdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1587708299843_61cgwamcfzqc6_180x180.9.png",
+      "hdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1587708299845_hh0g9fv5ct4qg_270x270.9.png",
+      "xhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1587708299845_41829x5c8c4jp_360x360.9.png",
+      "xxhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1587708299845_t04d2ctpubg62_540x540.9.png",
+      "xxxhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1587708299845_xa4waqcd5qnzr_720x720.9.png"
+    },
+    "transitionInteractiveDelayMax": 0.2,
+    "menuAnimationDuration": 0.15,
+    "androidShowSplash": true,
+    "disableAnimations": false,
+    "hideWebviewAlpha": 0.5,
+    "icon": "https://gonativeio.s3.amazonaws.com/uploads/mw1ccuazd56my_1587708247282.jpeg",
+    "iosHeaderImage": "images/logo1.png",
+    "showActionBar": true,
+    "showNavigationBar": true,
+    "iosSidebarFont": "Default",
+    "androidHideTitleInActionBar": false,
+    "navigationTitleImage": false,
+    "iosTheme": "default",
+    "androidTheme": "light",
+    "androidSidebarBackgroundColor": "#000000",
+    "androidSidebarForegroundColor": "#FFFFFF",
+    "androidActionBarBackgroundColor": "#5FA10A",
+    "androidActionBarForegroundColor": "#F2F2FF",
+    "androidPullToRefreshColor": "#147767",
+    "androidAccentColor": "#009688",
+    "androidSidebarSeparatorColor": "#585858",
+    "androidTabBarBackgroundColor": "#bdbdbd",
+    "androidTabBarTextColor": "#000000",
+    "androidTabBarIndicatorColor": "#000000",
+    "androidStatusBarBackgroundColor": "#327400",
+    "androidHeaderImage": "https://gonativeio.s3.amazonaws.com/uploads/wwd8y42x5qnmm_1587710192038.jpeg",
+    "androidNotificationIcon": "https://gonativeio.s3.amazonaws.com/uploads/ym09umnh8v000_1587710776292.jpeg",
+    "forceViewportWidth": 600
+  },
+  "forms": {
+    "interceptForms": {
+      "forms": []
+    },
+    "search": {
+      "active": false,
+      "searchTemplateURL": "https://cse.google.com/cse?cx=002663052735423840226:deuzbklnqty"
+    },
+    "loginConfig": {
+      "formSelector": null,
+      "loginIsFirstPage": false,
+      "formInputs": []
+    },
+    "signupConfig": {
+      "active": false,
+      "formSelector": null,
+      "formInputs": []
+    }
+  },
+  "permissions": {
+    "usesGeolocation": true,
+    "androidDownloadToPublicStorage": false,
+    "enableWebRTC": false
+  },
+  "performance": {
+    "webviewPools": [
+      {
+        "urls": [
+          {
+            "disown": "reload"
+          }
+        ]
+      }
+    ]
+  },
+  "services": {
+    "push": {
+      "active": false
+    },
+    "analytics": {
+      "active": false
+    },
+    "parse": {
+      "active": false,
+      "pushEnabled": false
+    },
+    "facebook": {
+      "active": false
+    },
+    "oneSignal": {
+      "active": true,
+      "notificationExtension": false,
+      "applicationId": "af84e7a7-2663-4c53-8e8b-be7971b16ead"
+    },
+    "registration": {
+      "active": false,
+      "endpoints": [
+        {
+          "url": null,
+          "urlRegex": null,
+          "dataType": [
+            "parse",
+            "oneSignal",
+            "xtremepush"
+          ]
+        }
+      ]
+    }
+  }
+}
